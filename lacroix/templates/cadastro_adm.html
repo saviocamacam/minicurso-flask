@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+
+{% block titulo%} Login {% endblock %}
+
+{% block conteudo %}
+
+<form action="/cadastro" method="post">
+	<div>
+		<label>Usuario:</label>
+		<input type="text" name="usuario">
+	</div>
+
+	<div>
+		<label> E-mail: </label>
+		<input type="text" name="email">	
+	</div>
+
+	<div>
+		<label>Senha:</label>
+		<input type="password" name="senha">
+	</div>
+	<button type="submit">Cadastra ADM</button>
+</form>
+
+{% endblock %}

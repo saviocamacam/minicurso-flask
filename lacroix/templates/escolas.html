@@ -1,0 +1,11 @@
+{% extends "layout.html"%}
+
+{% block titulo%} Login {% endblock %}
+
+{% block conteudo %}
+
+{% for escola in lista_escolas %}
+	<h3>{{ escola['nome']}}</h3>
+{% endfor%}
+
+{% endblock %}

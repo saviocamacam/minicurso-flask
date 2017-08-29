@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+
+{% block titulo%} Cadastro Aluno {% endblock %}
+
+{% block conteudo %}
+
+<form action="/aluno/new" method="post">
+	<div>
+		<label>Nome:</label>
+		<input type="text" name="nome">
+	</div>
+
+	<div>
+		<label> Idade: </label>
+		<input type="text" name="idade">	
+	</div>
+
+	<div>
+		<label> Escola:</label>
+		<input type="text" name="escola">
+	</div>
+	<button type="submit">Cadastra Aluno</button>
+</form>
+
+{% endblock %}

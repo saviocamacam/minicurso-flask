@@ -1,0 +1,11 @@
+{% extends "layout.html"%}
+
+{% block titulo%} Alunos Loucoes da Computacao {% endblock %}
+
+{% block conteudo %}
+
+{% for aluno in lista_alunos %}
+	<h3>{{ aluno['nome']}}</h3>
+{% endfor%}
+
+{% endblock %}

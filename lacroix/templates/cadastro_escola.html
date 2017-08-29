@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+
+{% block titulo%} Cadastro Escola {% endblock %}
+
+{% block conteudo %}
+
+<form action="/escola/new" method="post">
+	<div>
+		<label>Nome:</label>
+		<input type="text" name="nome">
+	</div>
+
+	<div>
+		<label> Cidade: </label>
+		<input type="text" name="cidade">	
+	</div>
+
+	<div>
+		<label> Gestor:</label>
+		<input type="text" name="gestor">
+	</div>
+	<button type="submit">Cadastra Escola</button>
+</form>
+
+{% endblock %}
